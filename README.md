@@ -1,1 +1,4 @@
-# inefficient-market
+Inefficient Market
+==================
+
+Bringing you investing insights.

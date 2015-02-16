@@ -1,0 +1,121 @@
+body {
+	background-position: center;
+}
+
+/* Navbar Styles */
+.navbar {
+	font-family: "Gilda Display";
+	background-color: white;
+	border-width: 0;
+	border: none;
+
+
+}
+
+#navbar > ul > li > a {
+	color: black;
+}
+
+#brand {
+	color: black;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+#navbar {
+	border-width: 0;
+	border-color: #C41E3A;
+}
+
+/* Text Styles */
+.block-text {
+	font-family: 'Gilda Display', serif;
+	color: white;
+	padding: 10px;
+}
+
+.red {
+	background-color: rgba(196, 30, 58, 0.8);
+}
+
+.black {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.white {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+}
+
+.title {
+	background-color: #C41E3A;
+	color: white;
+}
+
+h1, h2 {
+	font-family: 'Gilda Display', serif;
+}
+
+.copy {
+	margin-bottom: 0;
+}
+
+.seamless {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Quotes */
+.quote {
+	text-align: center;
+	color: #C41E3A;
+}
+
+.quote-author {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Image Overlay Styles */
+.overlay-white {
+	background: rgba(255,255,255,0.8);
+	overflow: scroll;
+	height: 100%;
+	z-index: 2;
+}
+
+/* Positioning Styles */
+.center-sensitive-square {
+	width: 75%;
+	margin: 0 auto;
+	max-width: 640px;
+	max-height: 640px;
+}
+
+/* Button Styles */
+#freshbtn {
+	color: white;
+	border-radius: 0;
+	border: solid;
+	border-width: 2px;
+	border-color: white;
+	background: transparent;
+}
+
+#freshbtn:hover {
+	color: #A93333;
+	border-color: black;
+	background: black;
+}
+
+/* Selection */
+::selection {
+	color: white;
+	background-color: #C41E3A;
+
+} /* Decide if I want to do anything here. */
