@@ -42,7 +42,7 @@ ga('send', 'pageview');
 
       <div class="row">
         <div class="col-md-12">
-          <h4>{{ post.body }}</h4>
+          <h4>{{ post.body|safe }}</h4>
           <p class="date">{{ post.created_at.strftime('%H:%M %Y-%m-%d') }}</p>
         </div>
       </div>
