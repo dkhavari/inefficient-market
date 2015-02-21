@@ -11,7 +11,7 @@ class ListView(MethodView):
 
     def get(self):
         posts = Post.objects.all()
-        return render_template('posts/list.html', posts=posts)
+        return render_template('index.html', posts=posts)
 
 
 class DetailView(MethodView):
@@ -52,23 +52,3 @@ class DetailView(MethodView):
 # Register the urls
 posts.add_url_rule('/', view_func=ListView.as_view('list'))
 posts.add_url_rule('/<slug>/', view_func=DetailView.as_view('detail'))
-
-# # ------------------------------
-# # Now get the basic routing done.
-# # ------------------------------
-
-# # Homepage.
-# @app.route("/index.html")
-# @app.route("/")
-# def index():
-# 	return render_template("index.html")
-
-# # Blog post display page.
-# @app.route("/blog.html")
-# def blog():
-# 	# TODO:
-# 	# --------------------------------------------------
-# 	# Get the name of the blog post from the args,
-# 	# retrieve from the database, then render the content.
-# 	# --------------------------------------------------
-# 	return render_template("blog.html")

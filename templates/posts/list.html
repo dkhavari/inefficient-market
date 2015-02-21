@@ -1,10 +1,21 @@
-{% for post in posts %}
-  <h2><a href="{{ url_for('posts.detail', slug=post.slug) }}">{{ post.title }}</a></h2>
-  <p>{{ post.body|truncate(100) }}</p>
-  <p>
-    {{ post.created_at.strftime('%H:%M %Y-%m-%d') }} |
-    {% with total=post.comments|length %}
-        {{ total }} comment {%- if total > 1 %}s{%- endif -%}
-    {% endwith %}
-  </p>
-{% endfor %}
+<div class="row" style="margin-bottom: 20px">
+	{% for post in posts %}
+	<div class="col-md-4" style="text-align: center;">
+		<a href="{{ url_for('posts.detail', slug=post.slug) }}">
+			<h3 class="block-text white" style="margin-bottom: 0">{{ post.title }}</h3>
+			<p class="block-text white" style="margin-bottom: 0">{{ post.body|truncate(100) }}</p>
+			<div class="block-text white" style="margin-top: 0">
+				<img style="width: 100%" src="{{ post.img }}">
+			</div>
+
+			<p class="block-text white" style="margin-top: 0; margin-bottom: 0">
+				{{ post.created_at.strftime('%H:%M %Y-%m-%d') }} |
+				{% with total=post.comments|length %}
+				{{ total }} comments
+				{% endwith %}
+			</p>
+		</a>
+
+	</div>
+	{% endfor %}
+</div>

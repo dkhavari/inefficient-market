@@ -2,14 +2,16 @@ body {
 	background-position: center;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 /* Navbar Styles */
 .navbar {
 	font-family: "Gilda Display";
 	background-color: white;
 	border-width: 0;
 	border: none;
-
-
 }
 
 #navbar > ul > li > a {
@@ -27,6 +29,13 @@ body {
 #navbar {
 	border-width: 0;
 	border-color: #C41E3A;
+}
+
+/* More button styles */
+.btn {
+	font-family: "Gilda Display";
+	margin: 20px 0px 20px 0px;
+	border-radius: 0;
 }
 
 /* Text Styles */
@@ -54,8 +63,12 @@ body {
 	color: white;
 }
 
-h1, h2 {
+h1, h2, h3, h4, p, label, textarea, input {
 	font-family: 'Gilda Display', serif;
+}
+
+.date {
+	color: #C41E3A;
 }
 
 .copy {
@@ -99,16 +112,16 @@ h1, h2 {
 
 /* Button Styles */
 #freshbtn {
-	color: white;
+	color: black;
 	border-radius: 0;
 	border: solid;
 	border-width: 2px;
-	border-color: white;
+	border-color: black;
 	background: transparent;
 }
 
 #freshbtn:hover {
-	color: #A93333;
+	color: white;
 	border-color: black;
 	background: black;
 }
