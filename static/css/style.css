@@ -102,6 +102,11 @@ h1, h2, h3, h4, p, label, textarea, input {
 	z-index: 2;
 }
 
+/* Textarea Perfecting */
+#body {
+	width: 75%;
+}
+
 /* Positioning Styles */
 .center-sensitive-square {
 	width: 75%;
