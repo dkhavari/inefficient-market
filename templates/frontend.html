@@ -12,3 +12,21 @@
 
 <!-- Custom Styles -->
 <link rel="stylesheet" href="/static/css/style.css">
+
+<script>
+$(function() {
+  var $body;
+  if (Modernizr.touch) {
+    $body = $("body");
+    document.addEventListener('focusin', function() {
+      return $body.addClass("fixfixed");
+    });
+    return document.addEventListener('focusout', function() {
+      $body.removeClass("fixfixed");
+      return setTimeout(function() {
+        return $(window).scrollLeft(0);
+      }, 20);
+    });
+  }
+});
+</script>
