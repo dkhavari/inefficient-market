@@ -52,3 +52,10 @@ class DetailView(MethodView):
 # Register the urls
 posts.add_url_rule('/', view_func=ListView.as_view('list'))
 posts.add_url_rule('/<slug>/', view_func=DetailView.as_view('detail'))
+
+# ----------------------------------------
+# Get the about.html and contact.html done.
+# ----------------------------------------
+@app.route('/about')
+def about():
+    return render_template('about.html')
