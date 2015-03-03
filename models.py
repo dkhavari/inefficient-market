@@ -19,8 +19,8 @@ class Post(db.Document):
 
 			meta = {
 			'allow_inheritance': True,
-			'indexes': ['-created_at', 'slug'],
-			'ordering': ['-created_at']
+			'indexes': ['-created_at', 'slug'], # Changed to + from -
+			'ordering': ['-created_at'] # Changed to + from -
 			}
 
 class Comment(db.EmbeddedDocument):

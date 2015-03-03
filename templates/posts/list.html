@@ -1,5 +1,5 @@
 <div class="row" style="margin-bottom: 20px">
-	{% for post in posts %}
+	{% for post in posts.order_by('-created_at') %}
 	<div class="col-md-4" style="text-align: center;">
 		<a href="{{ url_for('posts.detail', slug=post.slug) }}">
 			<h3 class="block-text white" style="margin-bottom: 0">{{ post.title }}</h3>
